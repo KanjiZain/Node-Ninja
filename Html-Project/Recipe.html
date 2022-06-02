@@ -1,0 +1,415 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Dates Recipe | Date Foods </title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="icons/nav.png" type="icon" sizes="32x32">
+
+
+</head>
+<body>
+    
+<!-- 1st navbar start -->
+
+<nav class="navbar navbar-expand-md navbar-dark  p-20 fixed-top" style="background-color: rgb(67, 222, 0);">
+  <a class="navbar-brand" href="home.html">
+    <img src="icons/nav.png" alt="Logo" style="width:100px; margin-left: 60px;" >
+  </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="menu">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item" style="font-weight: bold; font-size: 20px;"><a href="home.html" class="nav-link active-danger" style="color: rgb(0, 0, 0);">Home</a></li>
+            <li class="nav-item pl-3" style="font-weight: bold; font-size: 20px;"><a href="about.html" class="nav-link" style="color: white;">About Us</a></li>
+            <li class="nav-item pl-3 dropdown" style="font-weight: bold; font-size: 20px;">
+                <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white;">Products<b class="caret"></b></a>
+                <ul class="dropdown-menu navbar-light bg-light">
+                    <li style="font-size: 16px;" ><a href="Bulk Product.html" class="ml-4 text-decoration-none text-dark"  >Bulk Products </a></li>
+                    <li style="font-size: 16px;" ><a href="Retail Prodcut.html" class="ml-4 text-decoration-none text-dark" ">Retail Products</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pl-3" style="font-weight: bold; font-size: 20px;"><a href="packaging.html" class="nav-link" style="color: white;">Packaging</a></li>
+            <li class="nav-item pl-3" style="font-weight: bold; font-size: 20px;"><a href="Accedraration.html" class="nav-link" style="color: white;">Accreditation </a></li>
+            <li class="nav-item pl-3" style="font-weight: bold; font-size: 20px;"><a href="Industries.html" class="nav-link" style="color: white;">Industries serve</a></li>
+            <li class="nav-item pl-3" style="font-weight: bold; font-size: 20px;"><a href="Recipe.html" class="nav-link" style="color: white;">Recipe</a></li>
+            <li class="nav-item pl-3" style="font-weight: bold; font-size: 20px;"><a href="contact.html" class="nav-link" style="color: white;">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- navbar end -->
+
+    
+<br><br><br><br><br>
+
+<!-- Header -->
+<div class="container">
+  <div class="row d-flex flex-row">
+  <div class="col-md-4">
+  <img src="icons/brc.png" alt="bag" id="brc" width="100px">
+  </div>
+  <div class="col-md-4"> 
+  <span style=" font-weight: 900; color:rgb(238, 107, 0); margin-bottom: 10px;" ><br> ORGANIC |</span>
+  <span style="font-weight: 900; " >CONVENTIONAL</span>
+  </div>
+  <div class="col-md-4">
+  <button type="button" id="sign" class="btn btn-success" data-target="#modal" data-toggle="modal">SignUp/LogIn</button>
+  <img src="icons/shopping.png" alt="bag" id="bag">
+  </div>
+</div>
+</div>
+
+  <!--sign Up modal start-->
+
+<div class="modal" id="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="">Sign Up</h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="contact-form row ">
+              <div class="form-field col-lg-6">
+                  <input type="text" id="name" class="input-text">
+                  <label for="name" class="label">First Name</label>
+              </div>
+
+              <div class="form-field col-lg-6">
+                  <input type="text" id="name" class="input-text">
+                  <label for="name" class="label">Last Name</label>
+              </div>
+
+              <div class="form-field col-lg-12">
+                  <input type="email" id="name" class="input-text">
+                  <label for="name" class="label">Email</label>
+              </div>
+
+              <div class="form-field col-lg-12">
+                  <input type="password" id="name" class="input-text">
+                  <label for="name" class="label">Password</label>
+              </div>
+
+              <div class="form-field col-lg-12">
+                  <input class="submit-btn" type="submit" value="Sign Up">
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <div class="">
+          <p>Already have an account? <a href="" data-target="#modals" data-toggle="modal" data-dismiss="modal">Login here</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--sing up modal end-->
+
+<!--login modal start-->
+
+<div class="modal" id="modals">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="">Login</h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="contact-form row ">
+
+              <div class="form-field col-lg-12">
+                  <input type="email" id="name" class="input-text">
+                  <label for="name" class="label">Email</label>
+              </div>
+
+              <div class="form-field col-lg-12">
+                  <input type="password" id="name" class="input-text">
+                  <label for="name" class="label">Password</label>
+              </div>
+
+              <div class="form-field col-lg-12">
+                  <input class="submit-btn" type="submit" value="Login">
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <div class="">
+          <p>Don't have an account?<a href="" data-target="#modal" data-toggle="modal" data-dismiss="modal">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--login modal end-->
+
+<br><br><br>
+
+<!-- Header -->
+
+<div class="modal" id="honey">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="">Honey NutBars</h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="contact-form  ">
+            <p>"Sweet and chewy with dates, nuts and honey."</p>
+            <h2>INGREDIENTS</h2>
+            <p>
+              2 tablespoons butter <br> 1 pinch salt <br> 1/2 cup honey <br> 1/2 cup chopped walnuts <br> 2 eggs <br> 1/2 cup dates, pitted and chopped <br> 3/4 cup all-purpose flour <br>1/3 cup confectioners' sugar for decoration
+              <br>1/2 teaspoon baking powder
+              
+            </p>
+            <h1 class="">DIRECTIONS</h1>
+            <p>
+              Preheat oven to 350 degrees F (175 degrees C). Butter an 8-inch square cake pan.
+              
+              Melt the butter over low heat and pour into a large mixing bowl. Add the honey and eggs, and beat well. Mix in the flour, baking powder, and salt. Mix in the walnuts and dates. Spread batter in pan
+              
+              Bake for 25 minutes in the preheated oven, or until light brown. Let cool for 5 to 10 minutes. Cut into bars and roll in confectioners' sugar.</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="bacon">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="">Honey NutBars</h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="contact-form  ">
+            <p>"Dates are stuffed with blue cheese, wrapped in bacon and baked until crisp. These are delicious and very easy to make for a party. You can serve them at room temperature, so it is okay to make a few hours in advance!"            </p>
+            <h2>INGREDIENTS</h2>
+            <p>
+              1 pound sliced bacon, cut in half
+              <br> 1 pinch salt <br> 4 ounces blue cheese
+              <br> 1/2 cup chopped walnuts <br> 1 pound pitted dates
+            </p>
+            <h1 class="">DIRECTIONS</h1>
+            <p>
+              Preheat the oven to 375 degrees F (190 degrees C).
+              
+              Slice dates in half, and open them up. Pinch off pieces of blue cheese, and place them into the center of the dates. Close the halves of the dates, and wrap a half-slice of bacon around the outside. Secure each one with a toothpick. Arrange in a baking dish or on a baking sheet with sides to catch any grease.
+
+Bake for 30 to 40 minutes in the preheated oven, or until the bacon is crisp. Turn dates over after the first 20 minutes for even cooking..</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="nuts">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="">Honey NutBars</h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="contact-form  ">
+            <p>"Delicious bar cookies. Who can stop at one?"            </p>
+            <h2>INGREDIENTS</h2>
+            <p>
+              1 cup all-purpose flour <br> 1 cup white sugar
+              <br> 1/2 cup honey <br> 1/2 teaspoon baking powder
+              <br> 2 eggs <br> 1/2 cup dates, pitted and chopped <br> 3/4 cup all-purpose flour <br>1 pinch salt
+              <br>2/3 cup dates, pitted and chopped
+
+              
+            </p>
+            <h1 class="">DIRECTIONS</h1>
+            <p>
+              Preheat oven to 350 degrees F (175 degrees C). Lightly grease one 9 inch square baking pan.
+              
+              Combine flour and baking powder and set aside. In a large, clean glass or metal bowl, whip egg whites and salt and until foamy. Gradually add sugar and continue to whip until stiff (but not dry). Gradually fold in dry ingredients then fold in dates and nuts.
+              
+              Spread evenly in prepared pan. Bake for 20-30 minutes or until firm to touch.
+              Cool in pan until just cool enough to handle. Cut into finger-sized lengths and roll between palms to form logs. Roll each log in confectioners' sugar. Cool completely on wire rack.</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="cookie">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="">Honey NutBars</h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="contact-form  ">
+            <p>"The name says it all. A delicious bar cookie with rich date filling."            </p>
+            <h2>INGREDIENTS</h2>
+            <p>
+              2 tablespoons butter <br> 1 pinch salt <br> 1/2 cup honey <br> 1/2 cup chopped walnuts <br> 2 eggs <br> 1/2 cup dates, pitted and chopped <br> 3/4 cup all-purpose flour <br>1/3 cup confectioners' sugar for decoration
+              <br>1/2 teaspoon baking powder
+              
+            </p>
+            <h1 class="">DIRECTIONS</h1>
+            <p>
+              Preheat oven to 350 degrees F (175 degrees C). Butter an 8-inch square cake pan.
+              
+              Melt the butter over low heat and pour into a large mixing bowl. Add the honey and eggs, and beat well. Mix in the flour, baking powder, and salt. Mix in the walnuts and dates. Spread batter in pan
+              
+              Bake for 25 minutes in the preheated oven, or until light brown. Let cool for 5 to 10 minutes. Cut into bars and roll in confectioners' sugar.</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="banana">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="">Honey NutBars</h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="contact-form  ">
+            <p>A scrumptious blend of banana, dates, almonds, lemon, and vanilla will tantalize your tastebuds and it's also very nutritious."
+
+            </p>
+            <h2>INGREDIENTS</h2>
+            <p>
+              2 tablespoons butter <br> 1 pinch salt <br> 1/2 cup honey <br> 1/2 cup chopped walnuts <br> 2 eggs <br> 1/2 cup dates, pitted and chopped <br> 3/4 cup all-purpose flour <br>1/3 cup confectioners' sugar for decoration
+              <br>1/2 teaspoon baking powder
+              
+            </p>
+            <h1 class="">DIRECTIONS</h1>
+            <p>
+              Preheat oven to 350 degrees F (175 degrees C). Butter an 8-inch square cake pan.
+              
+              Melt the butter over low heat and pour into a large mixing bowl. Add the honey and eggs, and beat well. Mix in the flour, baking powder, and salt. Mix in the walnuts and dates. Spread batter in pan
+              
+              Bake for 25 minutes in the preheated oven, or until light brown. Let cool for 5 to 10 minutes. Cut into bars and roll in confectioners' sugar.</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--images start-->
+
+<div class="container">
+  <div class="row">
+<figure class="figure col-sm-6 img-thumbnail ">
+  <figcaption class="figure-caption text-body text-center" style="font-size: 30px;"><br><h1> Honey NutBars <hr style="width: 40%;border: 1px solid #d74b41; margin-bottom: 70px;"></h1></figcaption>
+    <img src="images/honey.png" class="figure-img img-fluid z-depth-1 mx-auto d-block" alt="..." style="width: 300px">
+    <figcaption class="figure-caption text-body text-center" style="font-size: 25px;"><br><p> "Sweet and chewy with dates, nuts and honey."    </p></figcaption>
+    <button class="btn btn-success mb-2" data-target="#honey" data-toggle="modal">Read More</button>
+</figure>
+<figure class="figure col-sm-6 img-thumbnail ">
+  <figcaption class="figure-caption text-body text-center" style="font-size: 25px;"><br><h1> Bacon Wrapped Dates <hr style="width: 40%;border: 1px solid #d74b41; margin-bottom: 70px;"></h1></figcaption>
+    <img src="images/bacon.png" class="figure-img img-fluid z-depth-1 mx-auto d-block" alt="..." style="width: 300px">
+    <figcaption class="figure-caption text-body text-center" style="font-size: 25px;"><br><p> "Dates are stuffed with blue cheese, wrapped in bacon and baked until crisp. These are delicious and very easy to make for a party. You can serve them at room temperature, so it is okay to make a few hours in advance!"</p></figcaption>
+    <button class="btn btn-success mb-2" data-target="#bacon" data-toggle="modal">Read More</button>
+</figure>
+<figure class="figure col-sm-6 img-thumbnail ">
+  <figcaption class="figure-caption text-body text-center" style="font-size: 25px;"><br><h1> Date Nuts Logs<hr style="width: 40%;border: 1px solid #d74b41; margin-bottom: 70px;"></h1></figcaption>
+    <img src="images/nuts.png" class="figure-img img-fluid z-depth-1 mx-auto d-block" alt="..." style="width: 300px">
+    <figcaption class="figure-caption text-body text-center" style="font-size: 25px;"><br><p> "Delicious bar cookies. Who can stop at one?"</p></figcaption>
+    <button class="btn btn-success mb-2" data-target="#nuts" data-toggle="modal">Read More</button>
+</figure>
+<figure class="figure col-sm-6 img-thumbnail ">
+  <figcaption class="figure-caption text-body text-center" style="font-size: 25px;"><br><h1> Date Filled Cookie Bars<hr style="width: 40%;border: 1px solid #d74b41; margin-bottom: 70px;"></h1></figcaption>
+    <img src="images/cookie.png" class="figure-img img-fluid z-depth-1 mx-auto d-block" alt="..." style="width: 300px">
+    <figcaption class="figure-caption text-body text-center" style="font-size: 25px;"><br><p> "The name says it all. A delicious bar cookie with rich date filling."</p></figcaption>
+    <button class="btn btn-success mb-2" data-target="#cookie" data-toggle="modal">Read More</button>
+</figure>
+<figure class="figure col-sm-12 img-thumbnail justify-content-center">
+  <figcaption class="figure-caption text-body text-center" style="font-size: 25px;"><br><h1> Banana Date Bars    <hr style="width: 20%;border: 1px solid #d74b41; margin-bottom: 70px;"></h1></figcaption>
+    <img src="images/banana.png" class="figure-img img-fluid z-depth-1 mx-auto d-block" alt="..." style="width: 300px">
+    <figcaption class="figure-caption text-body text-center" style="font-size: 25px;"><br><p> "A scrumptious blend of banana, dates, almonds, lemon, and vanilla will tantalize your tastebuds and it's also very nutritious."</p></figcaption>
+    <button class="btn btn-success mb-2" data-target="#banana" data-toggle="modal">Read More</button>
+</figure>
+
+</div>
+</div>
+
+<!--images end-->
+
+
+<br><br>
+
+
+<!-- Footer -->
+<section id="footer">
+  <div class="container">
+    <div class="row text-center text-xs-center text-sm-left text-md-left">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <img src="./icons/nav.png" alt="" width="50%" style="margin-bottom:3rem;">
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>Quick links</h5>
+        <ul class="list-unstyled quick-links">
+          <li><a href="./home.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+          <li><a href="./about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+          <li><a href="./Bulk Product.html"><i class="fa fa-angle-double-right"></i>Prodcut</a></li>
+          <li><a href="./packaging.html"><i class="fa fa-angle-double-right"></i>Packaging</a></li>
+          <li><a href="./Accedraration.html"><i class="fa fa-angle-double-right"></i>Accedraration</a></li>
+          <li><a href="./Industries.html"><i class="fa fa-angle-double-right"></i>Industries We Serve</a></li>
+          <li><a href="./Recipe.html"><i class="fa fa-angle-double-right"></i>Recipe</a></li>
+          <li><a href="./contact.html"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <h5>Get In Touch With Us</h5>
+        <p class="text-white"><img src="icons/location.png" alt=""><br>
+          5TH Floor Haji Adam Chambers, Altaf Hussain Road,
+          New Challi I.I Chundigarh , Karachi , Pakistan </p>
+          <p class="text-white"><img src="icons/call.png" alt=""><br>+92 21 111 112 111 <br> (9am - 10pm , Mon - Sat, Sunday 11am - 08pm)</p>
+          <img src="icons/email.png" alt=""><br>
+          <a href = "mailto:eshop@dates.com" class="text-white text-decoration-none"><u> eshop@dates.com</u></a>
+          <br><br>
+          <img src="icons/facebook.png" alt="" width="8%" >
+          <img src="icons/whatsapp.png" alt="" width="8%">
+          <img src="icons/twitter.png" alt="" width="8%">
+      </div>
+    </div>
+</section>
+<!-- ./Footer -->
+
+
+</body>
+</html>
