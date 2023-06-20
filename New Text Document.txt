@@ -1,3 +1,0 @@
-qc status
-SKUS
-Stagging Environment vs Live enviroemnt 
